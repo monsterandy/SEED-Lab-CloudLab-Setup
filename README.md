@@ -28,6 +28,7 @@ a method for you to SSH into this account. Please log into the VM, and do the fo
   and configure the system.
   ```
   cd SEED-Lab-CloudLab-Setup
+  chmod +x ./install.sh
   ./install.sh
   ```
 
