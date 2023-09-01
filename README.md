@@ -76,11 +76,11 @@ desktop.
 
   By default, TigerVNC server only listens to localhost/127.0.0.1. The
   purpose of the `-localhost no` option means accepting access from the
-  outside. When we first start the `vncserver`, we will be asked to provide a
-  password. Make sure this password is strong enough. Moreover, VNC
+  outside. **When we first start the `vncserver`, we will be asked to provide a
+  password. Make sure this password is strong enough.** Moreover, VNC
   communication itself is not encrypted, so you should not send anything
   personal. If you do want to secure it, you can run an SSH tunnel or VPN
-  tunnel to protect the VNC communication.
+  tunnel to protect the VNC communication. You can select 'no' when asked for view-only password.
 
 - **On your computer:** You need to have a VNC viewer installed
   on your computer, such as [RealVNC](https://www.realvnc.com/en/connect/download/viewer/).
