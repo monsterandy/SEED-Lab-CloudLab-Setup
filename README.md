@@ -36,10 +36,6 @@ a method for you to SSH into this account. Please log into the VM, and do the fo
   the SEED labs. The whole process will take a few minutes. Please
   don't leave, because you will be asked twice to make choices:
 
-  - During the installation of Wireshark, you will be asked
-    whether non-superuser should be able to capture packets.
-    Select `No`.
-
   - During the installation of `xfce4`, you will be asked to
     choose a default display manager. Choose `LightDM`.
 
