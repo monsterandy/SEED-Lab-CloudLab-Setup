@@ -172,7 +172,7 @@ echo "Cleaning up ..."
 # Remove the default network manager
 sudo systemctl stop NetworkManager
 sudo apt remove -y --purge network-manager
-sudo apt autoremove
+sudo apt autoremove -y
 
 # Clean up the apt cache 
 sudo apt clean
