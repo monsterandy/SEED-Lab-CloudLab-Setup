@@ -178,6 +178,10 @@ sudo apt autoremove -y
 sudo apt clean
 sudo rm -rf /var/lib/apt/lists/*
 
+# Change user to seed when login
+echo -e "\nsudo su seed" >> $HOME/.bashrc
+echo -e "cd" >> $HOMEDIR/.bashrc
+
 #================================================
 echo "All done!"
 echo "Use 'sudo su seed' to switch to the seed account."
