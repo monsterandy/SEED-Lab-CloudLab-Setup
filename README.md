@@ -35,7 +35,7 @@ a method for you to SSH into this account. Please log into the VM, and do the fo
 - **Note:** This shell script will download and install all the software needed for
   the SEED labs. **The whole process will take around 20 minutes. 
   Do not put your computer into sleep or disconnect the SSH session.** Please
-  don't leave, because you will be asked twice to make choices:
+  don't leave, because you will be asked to make choices:
 
   - During the installation of `xfce4`, you will be asked to
     choose a default display manager. Choose `LightDM`.
