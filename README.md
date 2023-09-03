@@ -33,12 +33,14 @@ a method for you to SSH into this account. Please log into the VM, and do the fo
   ```
 
 - **Note:** This shell script will download and install all the software needed for
-  the SEED labs. The whole process will take a few minutes. Please
+  the SEED labs. **The whole process will take around 20 minutes. 
+  Do not put your computer into sleep or disconnect the SSH session.** Please
   don't leave, because you will be asked twice to make choices:
 
   - During the installation of `xfce4`, you will be asked to
     choose a default display manager. Choose `LightDM`.
 
+**You do NOT need to reboot the cloud VM after above steps.** Please avoid rebooting your cloud VM as this may cause issues on the CloudLab platform.
 
 After the script finishes, a new account called `seed` is created.
 We will use this account for all the SEED labs, instead of the default one
@@ -69,7 +71,7 @@ desktop.
 
   Our installation script has already installed
   the TigerVNC server program on the VM. You need to start the
-  server.
+  server. **Be aware, this command should only be run under the user `seed`.**
   ```
   vncserver -localhost no
   ```  
@@ -87,8 +89,8 @@ desktop.
   If you prefer other VNC viewers,
   it is fine. Most of them are compatible with one another.
 
-  Start your VNC viewer program, and type the IP address of the VM, along with
-  the port number, such as `35.236.203.131:5901`. Most cloud VMs have two
+  Start your VNC viewer program, and type the host name or IP address of the VM, along with
+  the port number, such as `pc508.emulab.net:5901`. Most cloud VMs have two
   IP addresses; make sure you use the external IP address, not the internal
   one. You will be prompted for password, which is the one you typed
   when you first run the VNC server. If everything is done correctly,
@@ -99,10 +101,12 @@ desktop.
   is running properly. Here are some useful commands to help you manage the VNC server on the VM:
   ```
   vncserver -list       # List the VNC server sessions
-  vncserver -kill :1    # Kill the session for :1 display
+  vncserver -kill :0    # Kill the session for :0 display
   ```
 
 ## Step 2 (Option B): Access the VM Using SSH
+
+(You should already have the access to the VM's SSH according to previous slides, so you can skip this)
 
 To run VNC, you need to have reasonable bandwidth. If your VNC performance
 is bad, you should switch to SSH. You can get by with many of the
