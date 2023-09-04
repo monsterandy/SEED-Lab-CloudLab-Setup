@@ -50,6 +50,7 @@ account using the following command (if you do not use `sudo`, the OS
 will ask you to type the password, making it impossible to log in):
 ```
 sudo su seed
+cd  # go to the seed's home directory
 ```
 
 ## Step 2 (Option A): Access the VM Using VNC
@@ -82,7 +83,12 @@ desktop.
   password. Make sure this password is strong enough.** Moreover, VNC
   communication itself is not encrypted, so you should not send anything
   personal. If you do want to secure it, you can run an SSH tunnel or VPN
-  tunnel to protect the VNC communication. You can select 'no' when asked for view-only password.
+  tunnel to protect the VNC communication. 
+  
+  ```
+  Would you like to enter a view-only password (y/n)? n
+  ```
+  You can select 'n' when asked for view-only password.
 
 - **On your computer:** You need to have a VNC viewer installed
   on your computer, such as [RealVNC](https://www.realvnc.com/en/connect/download/viewer/).
