@@ -48,6 +48,7 @@ sudo apt -y install firefox
 #------------------------------------------------
 # Utilities
 
+sudo apt -y install eog
 sudo apt -y install bless
 sudo apt -y install ent
 sudo apt -y install execstack
