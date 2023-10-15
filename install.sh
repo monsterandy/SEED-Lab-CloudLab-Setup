@@ -101,7 +101,7 @@ sudo systemctl enable --now docker
 sudo usermod -aG docker $USERID
 
 # Install docker-compose. Check whether 1.27.4 is the newest version
-sudo curl -L "https://github.com/docker/compose/releases/download/1.27.4/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo curl -L "https://github.com/docker/compose/releases/download/2.20.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 
 sudo chmod +x /usr/local/bin/docker-compose
 
@@ -109,13 +109,13 @@ sudo chmod +x /usr/local/bin/docker-compose
 #================================================
 # echo "Installing Wireshark ..."
 
-# # Install Wireshark
-# # Make sure to select 'No' when asked whether non-superuser should be
-# #      able to capture packets.
-# sudo apt -y install wireshark
-# sudo chgrp $USERID /usr/bin/dumpcap
-# sudo chmod 750 /usr/bin/dumpcap
-# sudo setcap cap_net_raw,cap_net_admin+eip /usr/bin/dumpcap
+# Install Wireshark
+# Make sure to select 'No' when asked whether non-superuser should be
+#      able to capture packets.
+sudo apt -y install wireshark
+sudo chgrp $USERID /usr/bin/dumpcap
+sudo chmod 750 /usr/bin/dumpcap
+sudo setcap cap_net_raw,cap_net_admin+eip /usr/bin/dumpcap
 
 
 #================================================
