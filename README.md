@@ -39,6 +39,7 @@ a method for you to SSH into this account. Please log into the VM, and do the fo
 
   - During the installation of `xfce4`, you will be asked to
     choose a default display manager. Choose `LightDM`.
+  - Make sure to select 'No' when asked whether non-superuser should be able to capture packets.
 
 **You do NOT need to reboot the cloud VM after above steps.** Please avoid rebooting your cloud VM as this may cause issues on the CloudLab platform.
 
